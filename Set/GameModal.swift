@@ -12,31 +12,27 @@ class GameModal: ObservableObject {
     var state: GameState = .start
     
     static private func createGame() -> SetGame {
-        let game = SetGame()
+        var game = SetGame()
+        
         game.deelOutCards(12)
+        while !game.hasSet() {
+            game.deelOutCards()
+        }
+        
         return game
     }
     
     @Published private(set) var modal = createGame()
     
-    func cardsOnTable() -> [Card] {
-        modal.cardsOnTable
-    }
+    var cardsOnTable: [Card] { modal.cardsOnTable }
     
-    func score() -> Int {
-        modal.score
-    }
+    var score: Int { modal.score }
     
     func choose(_ card: Card) {
         modal.choose(card)
         
-        while !modal.hasSet() {
-            if modal.deckCount() == 0 {
-                state = .over
-                break
-            }
-            
-            modal.deelOutCards()
+        if !modal.hasSet() {
+            state = .over
         }
     }
     

@@ -7,28 +7,30 @@
 
 import Foundation
 
-enum CardNumber {
+enum CardNumber: String {
     case one, two, three
 }
 
-enum CardShape {
+enum CardShape: String {
     case diamond, squiggle, oval
 }
 
-enum CardShading {
+enum CardShading: String {
     case solid, striped, open
 }
 
-enum CardColor {
+enum CardColor: String {
     case red, green, purple
 }
 
-struct Card: Equatable {
+struct Card: Equatable, Identifiable {
     let number: CardNumber
     let shape: CardShape
     let shading: CardShading
     let color: CardColor
     var isFlipped = false
+    var highlight = false
+    let id: Int
     
     mutating func flip() {
         isFlipped = !isFlipped
