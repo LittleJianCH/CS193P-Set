@@ -11,6 +11,8 @@
 		D49C66862895006600071E0A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49C66852895006600071E0A /* ContentView.swift */; };
 		D49C66882895006700071E0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D49C66872895006700071E0A /* Assets.xcassets */; };
 		D49C668B2895006700071E0A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D49C668A2895006700071E0A /* Preview Assets.xcassets */; };
+		D49C66922895028C00071E0A /* SetCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49C66912895028C00071E0A /* SetCard.swift */; };
+		D49C669828950F4C00071E0A /* SetGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49C669728950F4C00071E0A /* SetGame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		D49C66852895006600071E0A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D49C66872895006700071E0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D49C668A2895006700071E0A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D49C66912895028C00071E0A /* SetCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetCard.swift; sourceTree = "<group>"; };
+		D49C669728950F4C00071E0A /* SetGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetGame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				D49C66832895006600071E0A /* SetApp.swift */,
 				D49C66852895006600071E0A /* ContentView.swift */,
+				D49C66912895028C00071E0A /* SetCard.swift */,
+				D49C669728950F4C00071E0A /* SetGame.swift */,
 				D49C66872895006700071E0A /* Assets.xcassets */,
 				D49C66892895006700071E0A /* Preview Content */,
 			);
@@ -138,6 +144,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D49C66862895006600071E0A /* ContentView.swift in Sources */,
+				D49C669828950F4C00071E0A /* SetGame.swift in Sources */,
+				D49C66922895028C00071E0A /* SetCard.swift in Sources */,
 				D49C66842895006600071E0A /* SetApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
